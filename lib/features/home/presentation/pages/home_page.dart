@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/features/home/presentation/widgets/category_selector.dart';
 import 'package:coffee_shop_app/features/home/presentation/widgets/header.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,8 @@ class HomePage extends StatelessWidget {
             const Header(),
           ],
         ),
+        const SizedBox(height: 35),
+        const CategorySelector()
       ],
     );
   }
