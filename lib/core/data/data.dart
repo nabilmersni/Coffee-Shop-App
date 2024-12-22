@@ -25,7 +25,7 @@ abstract class AppData {
 
   static final listOfCoffee = [
     Coffee(
-      image: 'assets/coffee-shop/coffee4.png',
+      image: 'assets/img/coffee4.png',
       name: 'Caffee Mocha',
       type: 'Deep Foam',
       rate: 4.8,
@@ -35,7 +35,7 @@ abstract class AppData {
       price: 4.53,
     ),
     Coffee(
-      image: 'assets/coffee-shop/coffee3.png',
+      image: 'assets/img/coffee3.png',
       name: 'Flat White',
       type: 'Espresso',
       rate: 4.8,
@@ -45,7 +45,7 @@ abstract class AppData {
       price: 3.53,
     ),
     Coffee(
-      image: 'assets/coffee-shop/coffee2.png',
+      image: 'assets/img/coffee2.png',
       name: 'Mocha Fusi',
       type: 'Ice/Hot',
       rate: 4.8,
@@ -55,7 +55,7 @@ abstract class AppData {
       price: 8.53,
     ),
     Coffee(
-      image: 'assets/coffee-shop/coffee1.png',
+      image: 'assets/img/coffee1.png',
       name: 'Irish Coffee',
       type: 'Popular',
       rate: 4.8,
@@ -65,7 +65,7 @@ abstract class AppData {
       price: 5.53,
     ),
     Coffee(
-      image: 'assets/coffee-shop/coffee5.png',
+      image: 'assets/img/coffee5.png',
       name: 'Affogato',
       type: 'Creamy',
       rate: 4.8,
