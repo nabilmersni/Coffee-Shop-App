@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/core/common/pages/app_main_page.dart';
 import 'package:coffee_shop_app/core/common/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +53,13 @@ class SplashScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     PrimaryButton(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushAndRemoveUntil(
+                          context,
+                          AppMainPage.route(),
+                          (route) => false,
+                        );
+                      },
                       title: "Get Started",
                     ),
                   ],

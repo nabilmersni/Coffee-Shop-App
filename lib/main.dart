@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Coffee Shop',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         textTheme: GoogleFonts.soraTextTheme(),
