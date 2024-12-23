@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
             final coffee = AppData.listOfCoffee[index];
             return GestureDetector(
               onTap: () {
-                Navigator.push(context, CoffeeDetailsPage.route());
+                Navigator.push(context, CoffeeDetailsPage.route(coffee));
               },
               child: Container(
                 padding: const EdgeInsets.fromLTRB(8, 8, 8, 12),
@@ -64,11 +64,14 @@ class HomePage extends StatelessWidget {
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(13),
-                          child: Image.asset(
-                            coffee.image,
-                            height: 160,
-                            width: double.infinity,
-                            fit: BoxFit.cover,
+                          child: Hero(
+                            tag: coffee.image,
+                            child: Image.asset(
+                              coffee.image,
+                              height: 160,
+                              width: double.infinity,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Align(
